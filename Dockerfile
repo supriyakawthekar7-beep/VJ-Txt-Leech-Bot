@@ -2,17 +2,16 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-FROM python:3.10-slim-buster
+FROM python:3.10-slim
 
-RUN apt-get update -y && \
+RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    gcc libffi-dev ffmpeg aria2 python3-pip && \
-    apt-get clean && \
+    gcc ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
-COPY . /app/
-WORKDIR /app/
+WORKDIR /app
+COPY . .
 
-RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python3", "main.py"]
+CMD ["python", "main.py"]
