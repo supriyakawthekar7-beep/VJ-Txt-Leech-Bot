@@ -33,7 +33,7 @@ getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 credit ="😎𝖘:)™~" 
-OWNER = int(os.environ.get("OWNER", 2032347579))
+OWNER = int(os.environ.get("OWNER", 6673889571))
 try: 
     ADMINS=[] 
     for x in (os.environ.get("ADMINS", "2032347579 5702090016").split()):  
