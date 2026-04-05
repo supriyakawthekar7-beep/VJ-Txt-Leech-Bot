@@ -35,9 +35,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configuration from environment variables with better validation
-API_ID = os.getenv("API_ID")
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+API_ID = os.getenv("27849461")
+API_HASH = os.getenv("8d828c37ffdd9872e0756571cb6bc183")
+BOT_TOKEN = os.getenv("8624116563:AAE1_KuO8478eqMSpEpRLgZrMdWFxaHfeBs")
 WEBHOOK = os.getenv("WEBHOOK", "False").lower() == "true"  # Default to False
 PORT = int(os.getenv("PORT", 8000))  # Default to 8000 if not set
 
